@@ -22,7 +22,8 @@
 # include ./colors/Gruvbox-Dark.conf
 
 # include ./Rosé Pine.conf
-include ./Default.conf
+# include ./Default.conf
+include ./colors/onenord_light.conf
 
 map ctrl+shift+p>n kitten hints --type=linenum --linenum-action=tab nvim +{line} {path}
 
@@ -30,8 +31,8 @@ map ctrl+shift+p>n kitten hints --type=linenum --linenum-action=tab nvim +{line}
 # Settings communs pour toutes les machines
 sync_to_monitor no
 disable_ligatures never
-dynamic_background_opacity true
-# background_opacity 0.8
+# dynamic_background_opacity true
+background_opacity 1.0
 enabled_layouts tall:bias=50;full_size=1;mirrored=false
 # enabled_layouts fat:bias=50;full_size=1;mirrored=false
 # Override cursor color always GREEN
@@ -40,13 +41,8 @@ cursor #00FF00
 adjust_line_height 150%
 
 
-
 font_size 18.0
-# font_family Monolisa Nerd Font
-# font_family 	family = "Comic Code Ligatures"
 # font_family FiraCode Nerd Font Mono
-# font_family JetBrainsMono Nerd Font Mono
-
 # >= .= <><= ===
 # >= .= <><= ===
 # background #282c34
@@ -56,10 +52,8 @@ confirm_os_window_close -1
 # Settings for the fonts
 # include ${OSMACHINE}-settings.conf
 
-# include ./ubuntu-settings.conf
 
 tab_bar_edge top
-# font_family Victor Mono
 
 # Crazy Fun Cursor Trail
 # cursor_trail 10
@@ -67,6 +61,9 @@ tab_bar_edge top
 
 # include ./fonts-firacode.conf
 
-# font-family	font-family="MesloLGDZ"
-
-
+# BEGIN_KITTY_FONTS
+font_family      family="FiraCode"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
