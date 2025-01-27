@@ -186,6 +186,11 @@ alias vim='NVIM_APPNAME="neovim-scn" nvim'
 
 
 
+## Pour lazydocker et lazygit
+alias lzd='lazydocker'
+alias lzg='lazygit'
+
+
 
 # set PATH so it includes user's private ~/.local/bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
