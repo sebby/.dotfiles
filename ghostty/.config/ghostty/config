@@ -6,12 +6,12 @@ theme=dark:"Kanagawa Dragon",light:"Kanagawa Wave"
 # theme="Brogrammer"
 
 theme="onenord"
-font-family="Berkeley Mono"
+# font-family="Berkeley Mono"
  # font-family = "Victor Mono"
 
 
-font-size = 18
-# font-family="FiraCode"
+font-size = 12
+font-family="FiraCode"
 # font-family="DankMono Nerd Font"
 # font-family="Iosevka Term"
 # font-family="Comic Code Ligatures"
