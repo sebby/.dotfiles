@@ -5,7 +5,7 @@
 	defaultBranch = main
 [core]
 	editor = NVIM_APPNAME="neovim-scn" nvim
-	pager = delta 
+	; pager = delta 
 [rerere]
 	enabled = true
 
