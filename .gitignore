@@ -11,3 +11,4 @@ nvim/.config/nvim/spell
 geany/.config/geany/session.conf
 geany/.config/geany/geany_socket*
 lazygit/.config/lazygit/state.yml
+./kitty/.config/kitty/Session.vim
