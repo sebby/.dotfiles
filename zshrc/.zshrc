@@ -180,17 +180,12 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 alias sandbox-drupal="cd ~/Projects/labs/php/sandbox-drupal"
 
 # alias vim="nvim"
-alias zshconfig="nvim ~/.zshrc"
 # alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
 alias vim='NVIM_APPNAME="neovim-scn" nvim'
-
-
 
 ## Pour lazydocker et lazygit
 alias lzd='lazydocker'
 alias lzg='lazygit'
-
-
 
 # set PATH so it includes user's private ~/.local/bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
@@ -210,11 +205,9 @@ source "$HOME/.cargo/env"
 
 export OSMACHINE="ubuntu"
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        # ...
 	print "Je suis dans linux-gnu" 
 	nerdfetch
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-        # Mac OSX
 	export OSMACHINE="apple"
 	print "Je suis dans un Mac OS"
 
@@ -239,7 +232,6 @@ fi
 eval "$(direnv hook zsh)"
 # source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
-# eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
@@ -252,7 +244,6 @@ eval "$(task --completion zsh)"
 
 # !! Contents within this block are managed by juliaup !!
 
-path=('/Users/sebastiencunin/.juliaup/bin' $path)
 
 export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
 # Fx is a powerful tool, terminal JSON viewer
@@ -267,13 +258,10 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
-
+# FIX: Supprimer ces 3 lignes de code.
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(~/.local/bin/mise activate zsh)"
-
-. "$HOME/.atuin/bin/env"
-
 
