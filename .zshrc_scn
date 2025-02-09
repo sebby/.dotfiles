@@ -1,0 +1,174 @@
+ # Source 
+ # 02/07/2025 New version for the tzshrc config
+ # source Dreams of Autonomy
+ #
+ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+
+## Init zinit tool
+source "${ZINIT_HOME}/zinit.zsh"
+
+setopt promptsubst
+
+# WARNING: https://zdharma-continuum.github.io/zinit/wiki/Example-Oh-My-Zsh-setup/
+# Sans turbo.
+
+## Add in starship
+# Load starship theme
+# line 1: `starship` binary as command, from github release
+# line 2: starship setup at clone(create init.zsh, completion)
+# line 3: pull behavior same as clone, source init.zsh
+zinit ice as"command" from"gh-r" \
+          atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+          atpull"%atclone" src"init.zsh"
+zinit light starship/starship
+
+zi ice from"gh-r" as"program"
+zi light junegunn/fzf
+
+
+# Alias tips plugin, not existing with OMZP plugins.
+zinit ice from'gh-r' as'program'
+zinit light sei40kr/fast-alias-tips-bin
+zinit light sei40kr/zsh-fast-alias-tips
+
+
+
+## Add in zsh plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+## Add in snippets
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::docker-compose #working with docker alias
+zinit snippet OMZP::command-not-found
+zinit snippet OMZP::kubectl
+zinit snippet OMZP::asdf
+
+
+## Migration from OH My zsh
+# TODO: chercher les plugins dans l'autre fichier zshrc.
+
+
+# load Completions
+autoload -Uz compinit && compinit
+
+zinit cdreplay -q
+
+# keybindings
+bindkey -e
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+
+#history
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+
+SAVEHIST=$HISTSIZE
+## duplicate items removed
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
+zstyle ':completion:*' menu no
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# ls ou lsd ??
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+# To make fzf-tab follow FZF_DEFAULT_OPTS.
+# NOTE: This may lead to unexpected behavior since some flags break this plugin. See Aloxaf/fzf-tab#455.
+zstyle ':fzf-tab:*' use-fzf-default-opts yes
+
+# Shell Integrations
+eval "$(fzf --zsh)"
+eval "$(direnv hook zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+# eval "$(atuin init zsh)"
+eval "$(~/.local/bin/mise activate zsh)"
+
+# NOTE: lancer cette commande pour avoir la completion sur ;'outil mise
+# UBUNTU => mise completion zsh  > /usr/local/share/zsh/site-functions/_mise
+# MAC OS => mise completion zsh  > /opt/homebrew/share/zsh/site-functions/_mise
+
+
+# Alias
+# TODO: chercher les autres alias dans le fichier zshrc.
+alias ls='lsd'
+alias la='lsd -a'
+alias ll='lsd -la'
+alias lt='lsd --tree'
+
+alias  v='fd --ignore-case --type f --hidden --exclude .git |fzf-tmux -p|xargs nvim'
+alias taskfile='/snap/task/current/task'
+
+
+alias lzd='lazydocker'
+alias lzg='lazygit'
+
+# alias vim="nvim"
+# alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+alias vim='NVIM_APPNAME="neovim-scn" nvim'
+
+# PATH présents dans le fichier zshrc original.
+# You may need to manually set your language environment
+# export LANG=fr_FR.UTF-8
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+export NVIM_APPNAME='neovim-scn'
+
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# export PAGER=most
+# export MANPAGER=most
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+export OSMACHINE="ubuntu"
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	print "Je suis dans linux-gnu" 
+	nerdfetch
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+	export OSMACHINE="apple"
+	print "Je suis dans un Mac OS"
+
+elif [[ "$OSTYPE" == "cygwin" ]]; then
+        # POSIX compatibility layer and Linux environment emulation for Windows
+elif [[ "$OSTYPE" == "msys" ]]; then
+        # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
+elif [[ "$OSTYPE" == "win32" ]]; then
+        # I'm not sure this can happen.
+elif [[ "$OSTYPE" == "freebsd"* ]]; then
+        # ...
+else
+        # Unknown.
+	print "Je suis dans ?????"
+fi
+
+
+
+ # Yazi tool
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
