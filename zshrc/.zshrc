@@ -264,4 +264,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(~/.local/bin/mise activate zsh)"
+# NOTE: lancer cette commande pour avoir la completion sur ;'outil mise
+# UBUNTU => mise completion zsh  > /usr/local/share/zsh/site-functions/_mise
+# MAC OS => mise completion zsh  > /opt/homebrew/share/zsh/site-functions/_mise
 
