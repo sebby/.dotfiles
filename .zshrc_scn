@@ -53,8 +53,11 @@ zinit snippet OMZP::asdf
 
 ## Migration from OH My zsh
 # TODO: chercher les plugins dans l'autre fichier zshrc.
-
 zinit load wfxr/forgit
+
+
+zinit ice lucid as"program" pick"bin/git-dsf"
+zinit load so-fancy/diff-so-fancy
 
 # load Completions
 autoload -Uz compinit && compinit
