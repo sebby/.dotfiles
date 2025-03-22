@@ -42,17 +42,19 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 ## Add in snippets
-zinit snippet OMZP::git
 zinit snippet OMZP::sudo
+zinit snippet OMZP::git
 zinit snippet OMZP::docker-compose #working with docker alias
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::kubectl
 zinit snippet OMZP::asdf
+# zinit snippet OMZ::plugins/git/git.plugin.zsh
 
 
 ## Migration from OH My zsh
 # TODO: chercher les plugins dans l'autre fichier zshrc.
 
+zinit load wfxr/forgit
 
 # load Completions
 autoload -Uz compinit && compinit
