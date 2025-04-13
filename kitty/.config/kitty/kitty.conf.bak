@@ -23,8 +23,8 @@
 
 # include ./Rosé Pine.conf
 # include ./Default.conf
-# include ./colors/onenord.conf
-include ./colors/onenord_light.conf
+
+
 
 
 #### START COMMONS SETTINGS
@@ -32,13 +32,10 @@ include ./colors/onenord_light.conf
 sync_to_monitor no
 disable_ligatures never
 dynamic_background_opacity true
-background_opacity 0.95
+# background_opacity 0.95
 enabled_layouts tall:bias=50;full_size=1;mirrored=false
 # enabled_layouts fat:bias=50;full_size=1;mirrored=false
-	# Override cursor color always by my choice
-cursor #FF00DD 
-font_size 10
-adjust_line_height 135%
+
 
 confirm_os_window_close -1
 #### FIN COMMONS SETTINGS
@@ -47,15 +44,28 @@ confirm_os_window_close -1
 # include ${OSMACHINE}-settings.conf
 tab_bar_edge top
 
-# Crazy Fun Cursor Trail
-# cursor_trail 10
-# cursor_trail_start_threshold 50
+symbol_map U+f101-U+f208 nonicon regular
 
-include ./fonts-firacode.conf
+# Crazy Fun Cursor Trail
+cursor_trail 10
+cursor_trail_start_threshold 50
+
+
+# include ./colors/onenord.conf
+# VERSION LIGHT avec le choix de polices différents Jetbrains ou IOSetka
+# include ./light-mode.conf
+# include ./dark-mode.conf
+# include ./light-mode.conf
+include ./Kanagawa_dragon.conf
+
+
+# Override cursor color always by my choice
+cursor #00ff00 
+
 
 # BEGIN_KITTY_FONTS
-# font_family      family="Berkeley Mono"
-# bold_font        auto
-# italic_font      auto
- # bold_italic_font auto
+font_family      family="Iosevka"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
 # END_KITTY_FONTS
