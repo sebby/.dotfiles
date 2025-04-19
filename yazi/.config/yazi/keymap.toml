@@ -502,3 +502,8 @@ keymap = [
 	# Filtering
 	{ on = "f", run = "filter", desc = "Filter help items" },
 ]
+
+[[manager.prepend_keymap]]
+on = ["g", "f"]
+run = 'search_do --via=fd --args="-d 3"'
+desc = "Switch to the flat view with a max depth of 3"

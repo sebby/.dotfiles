@@ -3,7 +3,7 @@
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [manager]
-ratio = [2, 3, 3]
+ratio = [1, 4, 3]
 sort_by = "alphabetical"
 sort_sensitive = false
 sort_reverse = false
@@ -28,6 +28,7 @@ image_quality = 75
 sixel_fraction = 15
 ueberzug_scale = 1
 ueberzug_offset = [0, 0, 0, 0]
+
 
 [opener]
 edit = [
@@ -180,7 +181,7 @@ previewers = [
 ]
 
 [input]
-cursor_blink = false
+cursor_blink = true
 
 # cd
 cd_title = "Change directory:"
