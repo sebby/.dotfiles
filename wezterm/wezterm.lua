@@ -1,5 +1,4 @@
-local wezterm = require 'wezterm'
-
+local wezterm = require("wezterm")
 
 -- This table will hold the configuration.
 local config = {}
@@ -10,6 +9,8 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+config.font = wezterm.font("Iosevka Term")
+
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
@@ -17,12 +18,12 @@ end
 
 -- Set background to same color as neovim
 config.colors = {}
-config.colors.background = '#111111'
+config.colors.background = "#111111"
 
-config.font = wezterm.font_with_fallback {
-	'Berkeley Mono',
-	'nonicons',
-}
+config.font = wezterm.font_with_fallback({
+	"Iosevka Term",
+	"nonicons",
+})
 
 -- default is true, has more "native" look
 config.use_fancy_tab_bar = false
