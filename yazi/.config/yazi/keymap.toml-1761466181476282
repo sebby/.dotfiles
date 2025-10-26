@@ -2,7 +2,7 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
-[mgr]
+[manager]
 
 keymap = [
 	{ on = "<Esc>", run = "escape", desc = "Exit visual mode, clear selection, or cancel search" },
@@ -503,7 +503,7 @@ keymap = [
 	{ on = "f", run = "filter", desc = "Filter help items" },
 ]
 
-[[mgr.prepend_keymap]]
+[[manager.prepend_keymap]]
 on = ["g", "f"]
 run = 'search_do --via=fd --args="-d 3"'
 desc = "Switch to the flat view with a max depth of 3"

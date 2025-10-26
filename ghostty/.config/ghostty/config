@@ -2,9 +2,10 @@
 # TODO: ajouter gruvbox comme colorscheme
 cursor-color = #ff66ff
 # font-family="JetBrains Mono"
-theme=dark:"Kanagawa Dragon",light:"Kanagawa Wave"
+# theme=dark:"Kanagawa Dragon",light:"Kanagawa Wave"
 # theme="Brogrammer"
 
+# theme="GruvboxDarkHard" 
 # theme="onenord"
 # font-family="Berkeley Mono"
 # font-family = "Victor Mono"
@@ -12,11 +13,11 @@ theme=dark:"Kanagawa Dragon",light:"Kanagawa Wave"
 
 font-size = 16
 # font-family="FiraCode"
-# font-family="DankMono Nerd Font"
-font-family="Iosevka Term"
-# font-style = "Regular"
+font-family="DankMono Nerd Font"
+# font-family="Iosevka Term"
+font-style = "Regular"
 # font-family="Comic Code Ligatures"
-adjust-cell-height = "35%"
+adjust-cell-height = "50%"
 # adjust-cell-width = "100%"
-background-opacity = 0.9
-background-blur-radius = 20
+# background-opacity = 0.9
+# background-blur-radius = 20

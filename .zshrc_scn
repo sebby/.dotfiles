@@ -123,9 +123,9 @@ alias taskfile='/snap/task/current/task'
 alias lzd='lazydocker'
 alias lzg='lazygit'
 
-# alias vim="nvim"
+alias vim="nvim"
 # alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
-alias vim='NVIM_APPNAME="neovim-scn" nvim'
+# alias vim='NVIM_APPNAME="neovim-scn" nvim'
 
 # PATH présents dans le fichier zshrc original.
 # You may need to manually set your language environment
