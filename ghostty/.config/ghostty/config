@@ -1,18 +1,19 @@
 # Fichier de configuration pour ghostty
-# TODO: ajouter gruvbox comme colorscheme
-cursor-color = #ff66ff
+cursor-color = #00ff00
 # font-family="JetBrains Mono"
 # theme=dark:"Gruvbox Dark Hard",light:"Gruvbox Light Hard"
-theme="Kanagawa Wave"
+# theme="Kanagawa Wave"
+theme= "Atom One Dark"
 
 # theme="onenord"
-font-family="Berkeley Mono"
+# font-family="Berkeley Mono"
+# 
 # font-family = "Victor Mono"
 
-font-size = 16
+font-size = 12
 # font-family="FiraCode"
 # font-family="DankMono Nerd Font"
-# font-family="Iosevka Term"
+font-family="Iosevka Term"
 font-style = "Regular"
 # font-family="Comic Code Ligatures"
 adjust-cell-height = "35%"
