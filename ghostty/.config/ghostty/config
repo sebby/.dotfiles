@@ -1,9 +1,11 @@
-# Fichier de configuration pour ghostty
+# Configure file for ghostty
 cursor-color = #00ff00
 # font-family="JetBrains Mono"
 # theme=dark:"Gruvbox Dark Hard",light:"Gruvbox Light Hard"
 # theme="Kanagawa Wave"
-theme= "Atom One Dark"
+# theme= "Atom One Light"
+theme= "GitHub Light Default"
+# theme= "GitHub Dark Default"
 
 # theme="onenord"
 # font-family="Berkeley Mono"
@@ -12,9 +14,9 @@ theme= "Atom One Dark"
 
 font-size = 12
 # font-family="FiraCode"
-# font-family="DankMono Nerd Font"
-font-family="Iosevka Term"
-font-style = "Regular"
+font-family="Dank Mono"
+# font-family="Iosevka Term"
+# font-style = "Regular"
 # font-family="Comic Code Ligatures"
 adjust-cell-height = "35%"
 # adjust-cell-width = "100%"
