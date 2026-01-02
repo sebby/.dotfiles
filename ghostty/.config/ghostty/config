@@ -4,8 +4,9 @@ cursor-color = #00ff00
 # theme=dark:"Gruvbox Dark Hard",light:"Gruvbox Light Hard"
 # theme="Kanagawa Wave"
 # theme= "Atom One Light"
-theme= "GitHub Light Default"
+# theme= "GitHub Light Default"
 # theme= "GitHub Dark Default"
+theme =dark:"Zenbones Dark", light:"Zenbones Light"
 
 # theme="onenord"
 # font-family="Berkeley Mono"
@@ -14,9 +15,12 @@ theme= "GitHub Light Default"
 
 font-size = 12
 # font-family="FiraCode"
-font-family="Dank Mono"
+
+# font-family="Dank Mono"
+font-family= "FiraCode"
+
 # font-family="Iosevka Term"
-# font-style = "Regular"
+font-style = "Regular"
 # font-family="Comic Code Ligatures"
 adjust-cell-height = "35%"
 # adjust-cell-width = "100%"
