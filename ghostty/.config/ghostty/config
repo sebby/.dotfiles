@@ -1,39 +1,31 @@
 # Configure file for ghostty
-cursor-color = #00ff00
+
 # font-family="JetBrains Mono"
-# theme=dark:"Gruvbox Dark Hard",light:"Gruvbox Light Hard"
-# theme="Kanagawa Wave"
-# theme= "Atom One Light"
-# theme= "GitHub Light Default"
-# theme= "GitHub Dark Default"
-theme =dark:"Zenbones Dark", light:"Zenbones Light"
 
 # theme="onenord"
 # font-family="Berkeley Mono"
 # 
 # font-family = "Victor Mono"
 
-font-size = 12
-# font-family="FiraCode"
+# FIXME: hello
+# WARNING: Hello 
+# INFO: Hello information 
+config-file = ./font-scn
+config-file = ./color-scn
 
-# font-family="Dank Mono"
-font-family= "FiraCode"
-
-# font-family="Iosevka Term"
-font-style = "Regular"
-# font-family="Comic Code Ligatures"
-font-feature = 'calc', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05','ss06','ss07','ss08','ss09','cv25','cv32','ss10','cv30','cv31','cv16','cv28','cv27','cv28','cv13','cv01', 'cv02','cv10','cv06','cv14'
-adjust-cell-height = "35%"
 # adjust-cell-width = "100%"
 # background-opacity = 0.9
 # background-blur-radius = 20
 #
 #
-#
 # Settings from Adib Hanna video !yt
 # https://www.youtube.com/watch?v=95Cz1uTK6eo
 #
-cursor-style = block
+# cursor-style = block
+cursor-color = #ff00ff
+cursor-style-blink = true
+# cursor-text = #fff0ff
+#
 # title = " "
 window-padding-balance = true
 window-padding-x = 5
@@ -43,3 +35,5 @@ window-save-state = always
 ## Keybindings.
 ### NOT WORKING ###
 # keybind = cmd+s>r=reload_config
+
+shell-integration = zsh
