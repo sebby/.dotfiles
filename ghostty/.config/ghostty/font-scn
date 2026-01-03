@@ -1,0 +1,12 @@
+font-size = 14
+
+adjust-cell-height = "35%"
+
+# font-family="Dank Mono"
+# font-family= "FiraCode"
+
+font-family= "FiraCode Nerd Font Propo"
+# font-family="Iosevka Term"
+font-style = "Regular"
+font-feature = 'calc', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05','ss06','ss07','ss08','ss09','cv25','cv32','ss10','cv30','cv31','cv16','cv28','cv27','cv28','cv13','cv01', 'cv02','cv10','cv06','cv14'
+
