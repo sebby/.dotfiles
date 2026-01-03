@@ -8,5 +8,12 @@ adjust-cell-height = "35%"
 font-family= "FiraCode Nerd Font Propo"
 # font-family="Iosevka Term"
 font-style = "Regular"
-font-feature = 'calc', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05','ss06','ss07','ss08','ss09','cv25','cv32','ss10','cv30','cv31','cv16','cv28','cv27','cv28','cv13','cv01', 'cv02','cv10','cv06','cv14'
+font-feature = 'calc', 'onum', 'ss01', 'ss02',  'ss04','ss06','ss07','ss08','ss09','ss10','cv25','cv32','cv30','cv31','cv16','cv28','cv27','cv28','cv12','cv01', 'cv02','cv10','cv06','cv14', 'cv26'
+
+# https://github.com/tonsky/FiraCode/blob/7e5bff99c479b731eb18d528320f8bca98a6ac19/extras/character_variants.png
+# >=  .= :-  &&   $ % @ 0123456789
+# Fl Tl fifj
+# A:E a:e *EO *eq C-O c-o X+Z x+z
+# |-|--|-----|
+# <> ?? !~ !! /\ \/ |} e
 
