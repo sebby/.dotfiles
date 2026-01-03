@@ -22,6 +22,7 @@ font-family= "FiraCode"
 # font-family="Iosevka Term"
 font-style = "Regular"
 # font-family="Comic Code Ligatures"
+font-feature = 'calc', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05','ss06','ss07','ss08','ss09','cv25','cv32','ss10','cv30','cv31','cv16','cv28','cv27','cv28','cv13','cv01', 'cv02','cv10','cv06','cv14'
 adjust-cell-height = "35%"
 # adjust-cell-width = "100%"
 # background-opacity = 0.9
@@ -42,4 +43,3 @@ window-save-state = always
 ## Keybindings.
 ### NOT WORKING ###
 # keybind = cmd+s>r=reload_config
-
