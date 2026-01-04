@@ -1,0 +1,27 @@
+{
+  "editor.fontFamily": "'FiraCode Nerd Font Propo', Fira Code, dank mono,Fira Code, monospace",
+  // "editor.fontLigatures": true,
+  // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+  "editor.fontLigatures": "'calc', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05','ss06','ss07','ss08','ss09','cv25','cv32','ss10','cv30','cv31','cv16','cv28','cv27','cv28','cv13','cv01', 'cv02','cv10','cv06','cv14'",
+  "cSpell.language": "en,fr",
+  "workbench.sideBar.location": "right",
+  "editor.allowVariableFonts": false,
+  "editor.fontSize": 14,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.lineHeight": 2,
+  "cSpell.userWords": [
+    "Actency",
+    "Cunin",
+    "dotenv"
+  ],
+  "workbench.colorTheme": "Quiet Light"
+}
