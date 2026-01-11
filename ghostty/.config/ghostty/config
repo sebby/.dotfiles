@@ -20,6 +20,7 @@ config-file = ./color-scn
 #
 # Settings from Adib Hanna video !yt
 # https://www.youtube.com/watch?v=95Cz1uTK6eo
+# 2026-01-11
 #
 # cursor-style = block
 cursor-color = #ff00ff
