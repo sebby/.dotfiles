@@ -7,6 +7,6 @@ theme="Kanagawa Wave"
 # theme=dark:"Zenbones Dark", light:"Zenbones Light"
 # theme=dark:"GitHub Dark Dimmed", light:"GitHub Light Default"
 # theme="primary"
-theme="ayu"
+theme=dark:"Ayu Internal",light:"Ayu Light Internal"
 # theme=dark:"Oxocarbon", light:"GitHub Light Default"
 #
