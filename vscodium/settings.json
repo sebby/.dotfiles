@@ -23,6 +23,6 @@
     "Cunin",
     "dotenv"
   ],
-  "workbench.colorTheme": "Quiet Light",
+  "workbench.colorTheme": "Ayu Dark Bordered",
   "errorLens.messageTemplate": "[$source] $message"
 }
