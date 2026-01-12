@@ -1,0 +1,15 @@
+anweber.local-sync@1.3.2
+astral-sh.ty@2025.80.0
+charliermarsh.ruff@2025.32.0
+devsense.composer-php-vscode@1.64.18270
+devsense.intelli-php-vscode@0.12.17700
+devsense.phptools-vscode@1.64.18270
+devsense.profiler-php-vscode@1.64.18270
+ms-python.debugpy@2025.18.0
+ms-python.python@2025.20.1
+ms-python.vscode-python-envs@1.10.0
+streetsidesoftware.code-spell-checker@4.4.0
+streetsidesoftware.code-spell-checker-french@0.4.4
+usernamehw.errorlens@3.26.0
+vscodevim.vim@1.32.4
+zhuangtongfa.material-theme@3.19.0
