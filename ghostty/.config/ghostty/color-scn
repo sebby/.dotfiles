@@ -4,7 +4,9 @@
 # theme= "Atom One Light"
 # theme= "GitHub Light Default"
 # theme= "GitHub Dark Default"
-theme =dark:"Zenbones Dark", light:"Zenbones Light"
-theme=dark:"GitHub Dark Dimmed", light:"GitHub Light Default"
+# theme=dark:"Zenbones Dark", light:"Zenbones Light"
+# theme=dark:"GitHub Dark Dimmed", light:"GitHub Light Default"
+# theme="primary"
+theme="ayu"
 # theme=dark:"Oxocarbon", light:"GitHub Light Default"
-
+#
