@@ -29,3 +29,5 @@
 	color-only = false
 	; side-by-side = true
 
+[commit]
+	verbose = true
