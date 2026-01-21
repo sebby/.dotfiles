@@ -1,11 +1,11 @@
 {
-  "editor.fontFamily": "'FiraCode Nerd Font Propo', Fira Code, dank mono,Fira Code, monospace",
+  "editor.fontFamily": "'VictorMono Nerd Font Mono','AdwaitaMono Nerd Font Mono','FiraCode Nerd Font Mono', monospace",
   // "editor.fontLigatures": true,
   // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+  // "editor.fontFamily": "Ubuntu Mono",
   "editor.fontLigatures": "'calc', '', 'ss01', 'ss02','ss04','ss06','ss07','ss09','ss10','cv25','cv32','cv30','cv31','cv15','cv16','cv28','cv27','cv28','cv12','cv01', 'cv02','cv10','cv14', 'cv26'",
   "cSpell.language": "en,fr",
   "workbench.sideBar.location": "right",
-  "editor.allowVariableFonts": false,
   "editor.fontSize": 14,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -23,6 +23,6 @@
     "Cunin",
     "dotenv"
   ],
-  "workbench.colorTheme": "Ayu Dark Bordered",
+  "workbench.colorTheme": "Default Dark+",
   "errorLens.messageTemplate": "[$source] $message"
 }
