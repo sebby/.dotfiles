@@ -16,5 +16,5 @@ apt-get install geany geany-plugin-addons geany-plugin-git-changebar geany-plugi
 ```
 
 
-## Deinstaller Geany
+## Désinstaller Geany
 https://ubuntuhandbook.org/index.php/2023/10/geany-2-0-released-how-to-install-in-ubuntu-22-04-20-04-23-10/
