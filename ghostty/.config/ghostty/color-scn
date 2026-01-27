@@ -9,4 +9,4 @@ theme="Kanagawa Wave"
 # theme="primary"
 theme=dark:"Ayu Internal",light:"Ayu Light Internal"
 # theme=dark:"Oxocarbon", light:"GitHub Light Default"
-#
+theme="Dracula"
