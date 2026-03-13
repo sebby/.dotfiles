@@ -23,8 +23,10 @@ config-file = ./color-scn
 # 2026-01-11
 #
 # cursor-style = block
-cursor-color = #ff00ff
-cursor-style-blink = true
+# cursor-color = #ff00ff
+# cursor-style-blink = true
+custom-shader = ./shaders/cursor_tail.glsl
+custom-shader-animation = always
 # cursor-text = #fff0ff
 #
 # title = " "
