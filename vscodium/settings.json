@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "'VictorMono Nerd Font Mono','AdwaitaMono Nerd Font Mono','FiraCode Nerd Font Mono', monospace",
+  "editor.fontFamily": "\"IosevkaTerm Nerd Font Propo\", 'VictorMono Nerd Font Mono','AdwaitaMono Nerd Font Mono','FiraCode Nerd Font Mono', monospace",
   // "editor.fontLigatures": true,
   // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
   // "editor.fontFamily": "Ubuntu Mono",
@@ -24,5 +24,9 @@
     "dotenv"
   ],
   "workbench.colorTheme": "Default Dark+",
-  "errorLens.messageTemplate": "[$source] $message"
+  "errorLens.messageTemplate": "[$source] $message",
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "tailwindcss"
+  }
 }

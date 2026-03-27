@@ -18,8 +18,6 @@ blocks:
   - name
   - links
 
-
-
 # == Date ==
 # This specifies the date format for the date column. The freeform format
 # accepts a strftime like string.
