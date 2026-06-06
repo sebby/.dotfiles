@@ -1,30 +1,33 @@
-font-size = 12
+font-size = 16
 
-adjust-cell-height = "35%"
+adjust-cell-height = "45%"
 
 # font-family="Dank Mono"
 # font-family= "FiraCode"
 
 
 # font-family="Operator Mono"
-# font-family = "FiraCode"
 # font-family="Iosevka Term"
-font-family = "IosevkaTerm Nerd Font Propo"
-font-style = "Regular"
+# font-family = "IosevkaTerm Nerd Font Propo"
+# font-style = "Regular"
 
-# font-family= "FiraCode Nerd Font Propo"
-# font-feature = 'calc',  'ss01', 'ss02','ss04','ss06','ss07','ss09','ss10','cv25','cv32','cv30','cv31','cv15','cv16','cv28','cv27','cv28','cv12','cv01', 'cv02','cv10','cv14', 'cv26'
+font-family = "Fira Code"
+font-feature = 'calc', 'ss01', 'ss02','ss04','ss06','ss07','ss09','ss10','cv25','cv32','cv30','cv15','cv16','cv27','cv28','cv12','cv01', 'cv02','cv10','cv14', 'cv26', 'ss03', 'cv31'
+
+
+# https://github.com/ghostty-org/ghostty/pull/185
 
 # Outil pour visualier en tant réel le rendu dans le navigateur (il faut déposer la police)
 # https://fontdrop.info/#/
 #
 # https://github.com/tonsky/FiraCode/blob/7e5bff99c479b731eb18d528320f8bca98a6ac19/extras/character_variants.png
-# >=  .= :-  &&   $ % @ 0123456789
+# >= <=  .= :-  &&  $ % @ 0123456789
 # Fl Tl fi fj fl ft
 # {. .}
 # A:E a:e *EO *eq C-O c-o X+Z x+z
 # |-|--|-----|
 # <> ?? !~ !! /\ \/ |} e [] && && **
+# () []
 # == === !==
 
 

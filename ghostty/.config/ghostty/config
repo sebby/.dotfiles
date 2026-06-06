@@ -14,9 +14,9 @@ config-file = ./font-scn
 config-file = ./color-scn
 
 # adjust-cell-width = "100%"
-# background-opacity = 0.9
-# background-blur-radius = 20
-#
+background-opacity = 0.9
+ background-blur-radius = 20
+
 #
 # Settings from Adib Hanna video !yt
 # https://www.youtube.com/watch?v=95Cz1uTK6eo
