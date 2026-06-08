@@ -8,10 +8,12 @@ adjust-cell-height = "45%"
 
 # font-family="Operator Mono"
 # font-family="Iosevka Term"
+# font-family = "Berkeley Mono"
 # font-family = "IosevkaTerm Nerd Font Propo"
 # font-style = "Regular"
 
 font-family = "Fira Code"
+
 font-feature = 'calc', 'ss01', 'ss02','ss04','ss06','ss07','ss09','ss10','cv25','cv32','cv30','cv15','cv16','cv27','cv28','cv12','cv01', 'cv02','cv10','cv14', 'cv26', 'ss03', 'cv31'
 
 

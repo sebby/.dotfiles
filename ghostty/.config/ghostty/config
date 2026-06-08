@@ -21,11 +21,15 @@ background-opacity = 0.9
 # Settings from Adib Hanna video !yt
 # https://www.youtube.com/watch?v=95Cz1uTK6eo
 # 2026-01-11
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
 #
-# cursor-style = block
-# cursor-color = #ff00ff
+
+shell-integration-features = no-cursor,sudo,no-title
+cursor-style = block
+#cursor-color = #ff00ff
 # cursor-style-blink = true
-custom-shader = ./shaders/cursor_tail.glsl
+ custom-shader = ./shaders/cursor_tail.glsl
 custom-shader-animation = always
 # cursor-text = #fff0ff
 #
@@ -34,9 +38,40 @@ window-padding-balance = true
 window-padding-x = 5
 window-padding-y = 0
 window-save-state = always
+macos-titlebar-style = transparent
+window-colorspace = "display-p3"
+background = 1C2021
 
 ## Keybindings.
-### NOT WORKING ###
-# keybind = cmd+s>r=reload_config
+##### ghostty +list-keybinds
+keybind = cmd+s>r=reload_config
+keybind = cmd+s>n=new_window
 
-shell-integration = zsh
+# split
+keybind = cmd+s>\=new_split:right
+keybind = cmd+s>-=new_split:down
+
+keybind = cmd+s>z=toggle_split_zoom
+
+## Other settings
+# tabs 
+keybind = cmd+s>c=new_tab
+keybind = cmd+s>shift+l=next_tab
+keybind = cmd+s>shift+h=previous_tab
+keybind = cmd+s>comma=move_tab:-1
+keybind = cmd+s>period=move_tab:1
+
+# quick tab switch
+keybind = cmd+s>1=goto_tab:1
+keybind = cmd+s>2=goto_tab:2
+keybind = cmd+s>3=goto_tab:3
+keybind = cmd+s>4=goto_tab:4
+keybind = cmd+s>5=goto_tab:5
+keybind = cmd+s>6=goto_tab:6
+keybind = cmd+s>7=goto_tab:7
+keybind = cmd+s>8=goto_tab:8
+keybind = cmd+s>9=goto_tab:9
+
+### https://gist.github.com/adibhanna/c552c452fb244b3b721e3c2432e85cde ###
+# other
+copy-on-select = clipboard
