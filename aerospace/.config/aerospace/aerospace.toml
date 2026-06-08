@@ -9,7 +9,7 @@ after-login-command = []
 after-startup-command = []
 
 # Start AeroSpace at login
-start-at-login = false
+start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -21,7 +21,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 accordion-padding = 30
 
 # Possible values: tiles|accordion
-default-root-container-layout = 'tiles'
+# default-root-container-layout = 'tiles'
 
 # Possible values: horizontal|vertical|auto
 # 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
@@ -162,10 +162,6 @@ backspace = ['close-all-windows-but-current', 'mode main']
 
 # NOTE: Voir cette section callback
 # https://nikitabobko.github.io/AeroSpace/guide#callbacks
-[[on-window-detected]]
-if.app-id = 'com.brave.Browser'
-run = 'move-node-to-workspace Web'
-
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace Web'
