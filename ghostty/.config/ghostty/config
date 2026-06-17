@@ -14,7 +14,7 @@ config-file = ./font-scn
 config-file = ./color-scn
 
 # adjust-cell-width = "100%"
-background-opacity = 0.9
+background-opacity = 0.95
 background-blur-radius = 20
 
 #

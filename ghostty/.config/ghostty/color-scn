@@ -13,4 +13,4 @@
 # theme="Dracula"
 # theme="Rose Pine"
 # theme="Kanagawa Wave"
-theme=dark:"Gruvbox Material", light:"Flexoki Light"
+theme=dark:"Gruvbox Material Dark", light:"Flexoki Light"
