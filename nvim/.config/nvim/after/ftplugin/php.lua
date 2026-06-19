@@ -1,2 +1,0 @@
--- - [ ] Activé des settings particulilers
--- print "Tu consultes un fichier PHP"
